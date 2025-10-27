@@ -20,4 +20,7 @@ dependencies = [
     "langchain-aws>=1.0.0",
     "langfuse==2.60.10",
     "qdrant-client>=1.15.1",
+    "sqlalchemy>=2.0.43",
+    "psycopg2-binary>=2.9.11",
+    "alembic>=1.17.0",
 ]

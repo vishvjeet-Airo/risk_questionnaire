@@ -33,5 +33,14 @@ class Settings(BaseSettings):
     langfuse_secret_key: Optional[str] = None
     langfuse_public_key: Optional[str] = None
     langfuse_host: str = "https://cloud.langfuse.com"
+    postgres_user: str = "postgres"
+    postgres_password: str = "postgres"
+    postgres_host: str = "localhost"
+    postgres_port: int = 5432
+    postgres_db: str = "risk_db"
+    
+    @property
+    def database_url(self) -> str:
+        return f"postgresql+psycopg2://{self.postgres_user}:{self.postgres_password}@{self.postgres_host}:{self.postgres_port}/{self.postgres_db}"
         
 settings = Settings()

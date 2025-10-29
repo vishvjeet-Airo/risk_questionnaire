@@ -1,22 +1,22 @@
 from sqlmodel import SQLModel, create_engine, Session
-from app.core import settings
-from typing import Generator
+from contextlib import contextmanager
+from app.core.config import settings
 
+# Use the same database URL from settings
+DATABASE_URL = settings.database_url
 
-# Create database engine
-engine = create_engine(
-    settings.database_url,
-    connect_args={"check_same_thread": False} if "sqlite" in settings.database_url else {},
-    echo=settings.debug
-)
-
+# Create SQLModel engine
+engine = create_engine(DATABASE_URL, echo=True)
 
 def create_db_and_tables():
-    """Create database tables."""
+    """Create database tables from SQLModel metadata."""
     SQLModel.metadata.create_all(engine)
 
-
-def get_session() -> Generator[Session, None, None]:
-    """Get database session."""
+@contextmanager
+def get_session():
+    """Provide a transactional scope for FastAPI and Alembic."""
     with Session(engine) as session:
         yield session
+
+# For Alembic compatibility
+Base = SQLModel

@@ -14,15 +14,22 @@ class Feedback(SQLModel, table=True):
     description: str
     priority: str = Field(default="medium", max_length=50)
     status: str = Field(default="open", max_length=50)
-    metadata: Optional[Dict[str, Any]] = Field(default=None, sa_column=Column(JSON))
+    meta_data: Optional[Dict[str, Any]] = Field(default=None, sa_column=Column(JSON))
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow, sa_column_kwargs={"onupdate": datetime.utcnow})
     resolved_at: Optional[datetime] = Field(default=None)
     resolved_by: Optional[int] = Field(default=None, foreign_key="user.id")
-    
+
     # Relationships
-    user: "User" = Relationship(back_populates="feedback")
-    
+    user: Optional["User"] = Relationship(
+        back_populates="feedback",
+        sa_relationship_kwargs={"foreign_keys": "[Feedback.user_id]"}
+    )
+
+    resolver: Optional["User"] = Relationship(
+        sa_relationship_kwargs={"foreign_keys": "[Feedback.resolved_by]"}
+    )
+
     class Config:
         from_attributes = True
 

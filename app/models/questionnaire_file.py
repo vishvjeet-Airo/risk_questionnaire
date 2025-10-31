@@ -20,7 +20,7 @@ class QuestionnaireFile(SQLModel, table=True):
     file_type: str = Field(max_length=100)
     is_draft: bool = Field(default=False)
     user_id: int = Field(foreign_key="user.id", index=True)
-    metadata: Optional[Dict[str, Any]] = Field(default=None, sa_column=Column(JSON))
+    meta_data: Optional[Dict[str, Any]] = Field(default=None, sa_column=Column(JSON))
     processing_errors: Optional[Dict[str, Any]] = Field(default=None, sa_column=Column(JSON))
     upload_status: str = Field(default="pending", max_length=50)
     uploaded_at: datetime = Field(default_factory=datetime.utcnow)

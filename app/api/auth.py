@@ -22,17 +22,13 @@ async def sign_up(
 ):
     """Register a new user account."""
     try:
-        print("***********************************************************************************************************************")
-        print("***********************************************************************************************************************")
         user = auth_service.create_user(user_data)
         return MessageResponse(
             message="User registered successfully"
         )
     except HTTPException as e:
-        print(e)
         raise
     except Exception as e:
-        print(e)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Failed to create user"
@@ -69,7 +65,6 @@ async def forgot_password(
         
         # TODO: Send email with reset token
         # For development, you might want to log the token
-        print(f"Password reset token for {request.email}: {token}")
         
         return MessageResponse(
             message="Password reset email sent"

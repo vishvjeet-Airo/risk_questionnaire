@@ -22,13 +22,17 @@ async def sign_up(
 ):
     """Register a new user account."""
     try:
+        print("***********************************************************************************************************************")
+        print("***********************************************************************************************************************")
         user = auth_service.create_user(user_data)
         return MessageResponse(
             message="User registered successfully"
         )
-    except HTTPException:
+    except HTTPException as e:
+        print(e)
         raise
     except Exception as e:
+        print(e)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Failed to create user"

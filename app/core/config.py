@@ -34,10 +34,10 @@ class Settings(BaseSettings):
     langfuse_public_key: Optional[str] = None
     langfuse_host: str = "https://cloud.langfuse.com"
     postgres_user: str = "postgres"
-    postgres_password: str = "postgres"
+    postgres_password: str = "9231"
     postgres_host: str = "localhost"
     postgres_port: int = 5432
-    postgres_db: str = "risk_db"
+    postgres_db: str = "risk_questionnaire"
     
     @property
     def database_url(self) -> str:

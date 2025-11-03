@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from ..utils.dependencies import get_current_active_user
 from ..models.user import User
 from app.models.sector import Sector
+from app.models.technology import Technology
 from sqlalchemy.orm import Session
 from app.database.connection import get_session
 
@@ -21,6 +22,9 @@ class SectorsResponse(BaseModel):
 
 class TechnologiesResponse(BaseModel):
     """Response model for technologies list."""
+    status: str = "success"
+    status_code: int = 200
+    message: str = "Technologies fetched successfully"
     technologies: List[str] = Field(..., description="List of available technologies")
     total_count: int = Field(..., description="Total number of technologies")
 
@@ -108,7 +112,8 @@ async def get_sectors(
 
 @router.get("/technologies", response_model=TechnologiesResponse)
 async def get_technologies(
-    current_user: User = Depends(get_current_active_user)
+    # current_user: User = Depends(get_current_active_user),
+    db: Session = Depends(get_session)
 ):
     """
     Get list of available technologies.
@@ -159,21 +164,26 @@ async def get_technologies(
     # - Return formatted list with count
     # - Consider caching for performance
     
-    return TechnologiesResponse(
-        technologies=[
-            "Artificial Intelligence",
-            "Machine Learning",
-            "Cloud Computing",
-            "Blockchain",
-            "Internet of Things (IoT)",
-            "Cybersecurity",
-            "Data Analytics",
-            "Mobile Applications",
-            "Web Development",
-            "DevOps"
-        ],
-        total_count=10
-    )
+    try:
+        # Fetch all sectors ordered by name
+        technologies = db.query(Technology).order_by(Technology.name.asc()).all()
+
+        # Extract only sector names
+        technologies_names = [technology.name for technology in technologies]
+
+        # Count total sectors
+        total_count = len(technologies_names)
+
+        return TechnologiesResponse(
+            technologies=technologies_names,
+            total_count=total_count
+        )
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to technologies sectors: {str(e)}"
+        )
 
 
 @router.get("/client/{client_name}", response_model=ClientSearchResponse)

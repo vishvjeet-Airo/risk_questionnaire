@@ -12,3 +12,7 @@ wheels/
 .env
 
 alembic/versions/*.py
+
+alembic/versions/
+
+app/core/config.py

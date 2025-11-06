@@ -26,7 +26,7 @@ async def sign_up(
         return MessageResponse(
             message="User registered successfully"
         )
-    except HTTPException:
+    except HTTPException as e:
         raise
     except Exception as e:
         raise HTTPException(
@@ -65,7 +65,6 @@ async def forgot_password(
         
         # TODO: Send email with reset token
         # For development, you might want to log the token
-        print(f"Password reset token for {request.email}: {token}")
         
         return MessageResponse(
             message="Password reset email sent"

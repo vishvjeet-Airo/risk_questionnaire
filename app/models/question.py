@@ -16,7 +16,7 @@ class Question(SQLModel, table=True):
     is_incorrect: bool = Field(default=False)
     comment: Optional[str] = Field(default=None)
     k_value: Optional[int] = Field(default=None)
-    metadata: Optional[Dict[str, Any]] = Field(default=None, sa_column=Column(JSON))
+    meta_data: Optional[Dict[str, Any]] = Field(default=None, sa_column=Column(JSON))
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow, sa_column_kwargs={"onupdate": datetime.utcnow})
     reviewed_at: Optional[datetime] = Field(default=None)

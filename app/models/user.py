@@ -19,15 +19,20 @@ class User(SQLModel, table=True):
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow, sa_column_kwargs={"onupdate": datetime.utcnow})
     deleted_at: Optional[datetime] = Field(default=None)
-    
+
     # Relationships
     role: Optional["Role"] = Relationship(back_populates="users")
     blacklisted_tokens: List["BlacklistedToken"] = Relationship(back_populates="user")
     password_reset_tokens: List["PasswordResetToken"] = Relationship(back_populates="user")
     questionnaire_files: List["QuestionnaireFile"] = Relationship(back_populates="user")
     questions: List["Question"] = Relationship(back_populates="reviewed_by_user")
-    feedback: List["Feedback"] = Relationship(back_populates="user")
-    
+
+    # Clarify that this uses Feedback.user_id
+    feedback: List["Feedback"] = Relationship(
+        back_populates="user",
+        sa_relationship_kwargs={"foreign_keys": "[Feedback.user_id]"}
+    )
+
     class Config:
         from_attributes = True
 

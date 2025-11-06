@@ -3,18 +3,28 @@ from typing import Dict, Any, List
 from pydantic import BaseModel, Field
 from ..utils.dependencies import get_current_active_user
 from ..models.user import User
+from app.models.sector import Sector
+from app.models.technology import Technology
+from sqlalchemy.orm import Session
+from app.database.connection import get_session
 
 router = APIRouter(prefix="", tags=["reference-data"])
 
 
 class SectorsResponse(BaseModel):
     """Response model for sectors list."""
+    status: str = "success"
+    status_code: int = 200
+    message: str = "Sectors fetched successfully"
     sectors: List[str] = Field(..., description="List of available sectors")
     total_count: int = Field(..., description="Total number of sectors")
 
 
 class TechnologiesResponse(BaseModel):
     """Response model for technologies list."""
+    status: str = "success"
+    status_code: int = 200
+    message: str = "Technologies fetched successfully"
     technologies: List[str] = Field(..., description="List of available technologies")
     total_count: int = Field(..., description="Total number of technologies")
 
@@ -24,10 +34,10 @@ class ClientSearchResponse(BaseModel):
     client_exists: bool = Field(..., description="Whether the client exists in the system")
     client_info: Dict[str, Any] = Field(..., description="Client information if found")
 
-
 @router.get("/sectors", response_model=SectorsResponse)
 async def get_sectors(
-    current_user: User = Depends(get_current_active_user)
+    # current_user: User = Depends(get_current_active_user),
+    db: Session = Depends(get_session)
 ):
     """
     Get list of available sectors.
@@ -78,26 +88,32 @@ async def get_sectors(
     # - Return formatted list with count
     # - Consider caching for performance
     
-    return SectorsResponse(
-        sectors=[
-            "Technology",
-            "Finance",
-            "Healthcare",
-            "Manufacturing",
-            "Retail",
-            "Education",
-            "Government",
-            "Energy",
-            "Transportation",
-            "Telecommunications"
-        ],
-        total_count=10
-    )
+    try:
+        # Fetch all sectors ordered by name
+        sectors = db.query(Sector).order_by(Sector.name.asc()).all()
+
+        # Extract only sector names
+        sector_names = [sector.name for sector in sectors]
+
+        # Count total sectors
+        total_count = len(sector_names)
+
+        return SectorsResponse(
+            sectors=sector_names,
+            total_count=total_count
+        )
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to fetch sectors: {str(e)}"
+        )
 
 
 @router.get("/technologies", response_model=TechnologiesResponse)
 async def get_technologies(
-    current_user: User = Depends(get_current_active_user)
+    # current_user: User = Depends(get_current_active_user),
+    db: Session = Depends(get_session)
 ):
     """
     Get list of available technologies.
@@ -148,21 +164,26 @@ async def get_technologies(
     # - Return formatted list with count
     # - Consider caching for performance
     
-    return TechnologiesResponse(
-        technologies=[
-            "Artificial Intelligence",
-            "Machine Learning",
-            "Cloud Computing",
-            "Blockchain",
-            "Internet of Things (IoT)",
-            "Cybersecurity",
-            "Data Analytics",
-            "Mobile Applications",
-            "Web Development",
-            "DevOps"
-        ],
-        total_count=10
-    )
+    try:
+        # Fetch all sectors ordered by name
+        technologies = db.query(Technology).order_by(Technology.name.asc()).all()
+
+        # Extract only sector names
+        technologies_names = [technology.name for technology in technologies]
+
+        # Count total sectors
+        total_count = len(technologies_names)
+
+        return TechnologiesResponse(
+            technologies=technologies_names,
+            total_count=total_count
+        )
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to technologies sectors: {str(e)}"
+        )
 
 
 @router.get("/client/{client_name}", response_model=ClientSearchResponse)

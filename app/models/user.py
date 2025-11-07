@@ -2,6 +2,8 @@ from sqlmodel import SQLModel, Field, Relationship
 from typing import Optional, List, TYPE_CHECKING
 from datetime import datetime
 from sqlalchemy import Column, ForeignKey
+from sqlalchemy import func
+
 
 if TYPE_CHECKING:
     from .questionnaire_file import QuestionnaireFile
@@ -11,11 +13,14 @@ if TYPE_CHECKING:
 
 class User(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
+    first_name: Optional[str] = Field(default=None, max_length=100)
+    last_name: Optional[str] = Field(default=None, max_length=100)
     email: str = Field(unique=True, index=True, max_length=255)
     hashed_password: str = Field(max_length=255)
     role_id: int = Field(foreign_key="role.id", index=True)
     is_active: bool = Field(default=True)
     is_admin: bool = Field(default=False)
+    last_login: Optional[datetime] = Field(default=None)
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow, sa_column_kwargs={"onupdate": datetime.utcnow})
     deleted_at: Optional[datetime] = Field(default=None)
@@ -40,9 +45,13 @@ class User(SQLModel, table=True):
 class Role(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     name: str = Field(unique=True, max_length=100)
-    description: str = Field(default="")
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow, sa_column_kwargs={"onupdate": datetime.utcnow})
+    description: str = Field(default=None, nullable=True) 
+    created_at: datetime = Field(
+        sa_column_kwargs={"server_default": func.now()}
+    )
+    updated_at: datetime = Field(
+        sa_column_kwargs={"server_default": func.now(), "onupdate": func.now()}
+    )
     deleted_at: Optional[datetime] = Field(default=None)
     
     # Relationships

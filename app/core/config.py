@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     secret_key: str = "dev-secret-change-me"
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 60 * 8
+    refresh_token_expire_days: int = 7 
 
     # AWS Bedrock configuration
     aws_region: str = "us-east-1"

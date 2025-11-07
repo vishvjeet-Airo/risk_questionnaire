@@ -4,6 +4,7 @@ from .question import Question
 from .feedback import Feedback
 from .technology import Technology
 from .sector import Sector
+from .client import Client
 
 __all__ = [
     "User",
@@ -15,4 +16,5 @@ __all__ = [
     "Feedback",
     "Technology",
     "Sector",
-]
+    "Client"
+    ]

@@ -12,9 +12,8 @@ def create_db_and_tables():
     """Create database tables from SQLModel metadata."""
     SQLModel.metadata.create_all(engine)
 
-# @contextmanager
 def get_session():
-    """Provide a transactional scope for FastAPI and Alembic."""
+    """Dependency to get a SQLModel session for FastAPI."""
     with Session(engine) as session:
         yield session
 

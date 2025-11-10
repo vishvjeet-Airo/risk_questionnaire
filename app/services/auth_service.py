@@ -105,7 +105,7 @@ class AuthService:
             }
 
         except Exception as e:
-            api_logger.excpetion(f"Error while creating user: {str(e)}")
+            api_logger.exception(f"Error while creating user: {str(e)}")
             return {
                 "status_code": status.HTTP_500_INTERNAL_SERVER_ERROR,
                 "message": "Internal server error while creating user.",

@@ -6,7 +6,7 @@ from app.api.dashboard import router as dashboard_router
 # from app.api.feedback import router as feedback_router
 # from app.api.knowledge_base import router as knowledge_base_router
 # from app.api.questionnaire import router as questionnaire_router
-# from app.api.reference_data import router as reference_data_router
+from app.api.reference_data import router as reference_data_router
 from app.database.connection import create_db_and_tables
 from app.api import role
 
@@ -35,7 +35,7 @@ app.include_router(dashboard_router, prefix="/api")
 # app.include_router(feedback_router, prefix="/api")
 # app.include_router(knowledge_base_router, prefix="/api")
 # app.include_router(questionnaire_router, prefix="/api")
-# app.include_router(reference_data_router, prefix="/api")
+app.include_router(reference_data_router, prefix="/api")
 
 app.include_router(role.router)
 

@@ -1,0 +1,89 @@
+Facts for Sheet: 7- Legal Health Record Req. 
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group's vending machine systems do not require or support electronic signatures. This functionality is not applicable to their current vending machine operations and technology infrastructure.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group's vending machine operations do not require electronic signatures. The company's systems and processes for vending machines are designed to operate without the need for electronic signature functionality, which includes author name, credentials, date, and time of signature. This reflects the nature of Compass Group's vending machine business model and its technological infrastructure in this specific area of operations.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group does not have an integration process with Virtua's electronic health record systems. The company's systems and workflows are designed to operate independently without direct integration to external healthcare providers' electronic health records.
+
+Compass Group's systems do not include alerts for failed integration processes with Virtua's electronic health records, as there is no such integration in place. The company's technology infrastructure is self-contained and does not rely on external health record system connections for its core operations.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group does not handle document versioning, addendums, late entries, or corrections in their legal health record system. The company's processes and technologies do not include functionality for managing different versions of documents or making modifications to existing records within their legal health record management practices.
+
+
+Batch 5:
+--------------------------------------------------------------------------------
+Compass Group does not have a system in place for automatically sending revised documents to interfaced systems when new versions are created. This functionality is not applicable to their current document management and interfacing processes, indicating that any updates to records after interfacing with other systems would likely require manual intervention or alternative procedures to ensure data consistency across systems.
+
+
+Batch 6:
+--------------------------------------------------------------------------------
+Compass Group does not have a process in place for correcting true errors in medical records, such as removing another patient's name from a narrative note to avoid HIPAA violations. The company's response indicates that this scenario is not applicable to their operations, suggesting they may not handle or maintain medical records that would require such error correction procedures.
+
+
+Batch 7:
+--------------------------------------------------------------------------------
+Compass Group does not maintain a legal health record system. The company's operations and technologies do not involve systems that store or manage legal health records, and therefore there are no associated limitations or technical requirements related to the retention of such records. This includes any considerations for software or hardware upgrades that might be necessary for long-term record retention, such as those required by New Jersey's minimum 10-year retention policy for health records after the most recent patient visit.
+
+
+Batch 8:
+--------------------------------------------------------------------------------
+Compass Group does not have limitations or processes related to converting clinical information to another system in the event of system decommissioning. The company does not handle or manage clinical information systems, and therefore considerations about linked items or available output formats for conversion are not applicable to Compass Group's operations or technology infrastructure.
+
+
+Batch 9:
+--------------------------------------------------------------------------------
+Compass Group does not maintain a legal health record system separate from Virtua's legal health record. The company's systems are designed to interface with Virtua's legal health record rather than maintaining an independent legal health record. This approach ensures that all health record data is centralized and managed within Virtua's established system.
+
+Compass Group's systems do not include functionality for electronically releasing or compiling legal health records, as this is not applicable to their operational model. The company's technology infrastructure is designed to support and interface with existing health record systems rather than replacing or replicating them.
+
+
+Batch 10:
+--------------------------------------------------------------------------------
+Compass Group's systems do not maintain a legal health record. The company's technology infrastructure is not designed to interface with or maintain legal health records, indicating that Compass Group likely does not operate in a capacity that requires the management of such sensitive healthcare information.
+
+
+Batch 11:
+--------------------------------------------------------------------------------
+Compass Group does not have a system in place for releasing electronic records with password protection and encryption. This capability is not applicable to their current operations or technology infrastructure, indicating that they either do not handle such sensitive electronic records or use alternative methods for secure record management and release.
+
+
+Batch 12:
+--------------------------------------------------------------------------------
+Compass Group does not generate or maintain medical records containing patient information such as names, dates of birth, dates of service, or medical record numbers. The company's operations and technologies do not involve handling or processing patient health records or identifiers typically associated with healthcare providers or medical facilities.
+
+
+Batch 13:
+--------------------------------------------------------------------------------
+Compass Group does not maintain or produce a legal record output containing clinical information. The company's operations and technologies do not involve handling or processing medical records or clinical data, as this is not within the scope of their business activities or service offerings.
+
+
+Batch 14:
+--------------------------------------------------------------------------------
+Compass Group's vending machine systems do not accept HL7 messages for merge transactions, patient name updates, or other similar operations. The company's vending technology is not designed to interface with healthcare data protocols, as it is not applicable to their core business of providing food and beverage vending services.
+
+
+Batch 15:
+--------------------------------------------------------------------------------
+Compass Group does not utilize an ADT feed from Epic or other patient care systems for patient matching in their operations. Their services are limited to vending machines, which do not require patient identification or integration with healthcare information systems. Compass Group's vending machine operations do not involve handling patient data or adhering to healthcare-specific patient identification standards.
+
+Compass Group's vending machine services do not necessitate compliance with Virtua's patient identification standards, including the use of legal names for patient identification. Their vending operations are separate from healthcare information systems and do not involve processing or storing patient data.
+
+
+Batch 16:
+--------------------------------------------------------------------------------
+Compass Group's vending machine systems do not require or utilize ADT feeds or interfaces for patient identification. The company's vending operations are not subject to healthcare-specific patient identification policies or naming conventions, as they do not involve patient records or healthcare data management. Compass Group's vending services are separate from hospital information systems and do not interact with patient demographic data or master patient indexes.
+
+

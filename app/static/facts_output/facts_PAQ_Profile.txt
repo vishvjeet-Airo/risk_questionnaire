@@ -1,0 +1,81 @@
+Facts for Sheet: PAQ Profile 
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product in the Healthcare sector does not have access to Protected Health Information (PHI).
+
+Compass Group's TaskUp product in the Healthcare sector does not have access to Personally Identifiable Information (PII).
+
+Compass Group's TaskUp product in the Healthcare sector does not have access to Credit Card Data (PCI).
+
+Compass Group's TaskUp product in the Healthcare sector has access to Intellectual Property.
+
+Compass Group's TaskUp product in the Healthcare sector does not have access to Financial Data.
+
+Compass Group's TaskUp product in the Healthcare sector does not have access to Employee Information.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product creates, receives, maintains, and transmits routine and ad-hoc task data, specifically housekeeping duty lists.
+
+Compass Group does not send data to subcontractors for their TaskUp product in the Healthcare sector.
+
+Business reasons for sending data to subcontractors are not applicable for Compass Group's TaskUp product in the Healthcare sector.
+
+Business Associate Agreements with subcontractors for PHI handling are not applicable for Compass Group's TaskUp product in the Healthcare sector.
+
+User consent requirements are not applicable for Compass Group's TaskUp product in the Healthcare sector.
+
+Compass Group attests that no tracking technologies (including analytics, ad, user experience, performance monitoring, and real-time tracking) are presently being used or will be implemented within any services, products, or tools for HFH in relation to their TaskUp product.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group can provide technical documentation or a data sample for their TaskUp product used in the Healthcare sector.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product is available as a Software-as-a-Service (SaaS) implementation method, with the vendor hosting the solution.
+
+Compass Group's TaskUp product is not available as a locally installed implementation method hosted by the client.
+
+Compass Group's TaskUp product is not available as a hybrid implementation method with both vendor and client hosting.
+
+
+Batch 5:
+--------------------------------------------------------------------------------
+Compass Group is responsible for maintaining and supporting the TaskUp product for their Healthcare sector clients.
+
+
+Batch 6:
+--------------------------------------------------------------------------------
+Compass Group has a designated point of contact for security-related questions and concerns about their TaskUp product in the Healthcare sector.
+
+
+Batch 7:
+--------------------------------------------------------------------------------
+Compass Group utilizes multiple technologies in their TaskUp service for the Healthcare sector, including cloud computing, web applications, databases, tablets, and laptops.
+
+
+Batch 8:
+--------------------------------------------------------------------------------
+TaskUp, a technology provided by Compass Group in the Healthcare sector, supports federated identity. The federated identity in TaskUp is achieved through SAML (Security Assertion Markup Language).
+
+
+Batch 9:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product has the ability to store data on cloud services other than Box or Azure.
+
+Compass Group uses AWS as the cloud provider for TaskUp in the Healthcare sector.
+
+The URLs for Compass Group's TaskUp product in the Healthcare sector are https://dispatcher.taskup.healthcare-compass.com/ for the Dispatcher and https://operator.taskup.healthcare-compass.com/ for the Operator.
+
+
+Batch 10:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp solution supports High Availability, including features such as Windows Server Failover Clustering (WSFC) and SQL Always On Failover Clustering Instances (FCI)/Always On Availability Groups (AG).
+
+

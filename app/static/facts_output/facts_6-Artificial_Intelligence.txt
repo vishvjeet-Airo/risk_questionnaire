@@ -1,0 +1,148 @@
+Facts for Sheet: 6-Artificial Intelligence
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group's solution for vending machines does not include any artificial intelligence (AI) or machine learning (ML) components. The company has explicitly stated that no AI is involved in their vending machine operations, and they consider all AI-related inquiries to be not applicable to their current vending machine technology implementation.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group does not currently utilize any artificial intelligence technologies in their solutions. Their operations do not involve Natural Language Processing, Large Language Models, Computer Vision, Predictive Analytics, or other AI-related technologies for their products or services.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group does not currently develop or utilize any artificial intelligence components, either in-house or through third-party tools or libraries. The company's operations and technology stack do not include AI technologies at this time.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group does not currently utilize an AI solution for data ingestion and preprocessing. The company has not implemented any automated systems for cleaning, normalizing, or structuring data for AI models. This indicates that Compass Group's AI capabilities in this area are limited or non-existent, and they may rely on manual data preparation methods if AI is used at all.
+
+
+Batch 5:
+--------------------------------------------------------------------------------
+Compass Group does not currently offer or utilize an AI solution that involves model training or retraining processes. The company's operations and technologies do not include AI capabilities that would require on-site model retraining with customer data.
+
+Compass Group does not have a process in place for retraining AI models on-site using customer data, as this capability is not part of their current technology offerings or operational processes.
+
+Compass Group does not have a schedule or process for updating or retraining AI models, as they do not currently employ AI solutions that would necessitate such regular model maintenance or improvement.
+
+
+Batch 6:
+--------------------------------------------------------------------------------
+Compass Group does not currently have an AI system that handles data privacy and security or processes training data. The company has not implemented any artificial intelligence technologies that would require compliance with regulations such as HIPAA or GDPR in relation to AI systems.
+
+Compass Group has not established specific compliance measures for AI systems with regards to data privacy regulations like HIPAA or GDPR, as the company does not currently utilize AI technologies that would fall under the scope of these regulations.
+
+
+Batch 7:
+--------------------------------------------------------------------------------
+Compass Group does not currently offer or utilize AI solutions that provide model explainability and interpretability features. The company's operations and technology stack do not include AI models or systems that require user understanding of AI decision-making processes.
+
+Compass Group has not implemented any features or capabilities that allow users to understand the decision-making process of AI models, as the company does not employ such AI systems in its operations or service offerings.
+
+Compass Group does not utilize any specific methods, such as SHAP (SHapley Additive exPlanations) or LIME (Local Interpretable Model-agnostic Explanations), to ensure transparency in AI models. The company's current technology infrastructure and business processes do not involve the use of complex AI systems that would require such explainability techniques.
+
+
+Batch 8:
+--------------------------------------------------------------------------------
+Compass Group does not currently identify or mitigate bias in AI models. The company has not implemented any processes or tools for detecting or addressing potential biases in artificial intelligence systems.
+
+Compass Group does not provide any tools or reports specifically designed for bias detection and mitigation in AI models. The company has not developed or deployed such capabilities as part of its artificial intelligence practices.
+
+
+Batch 9:
+--------------------------------------------------------------------------------
+Compass Group does not currently deploy or utilize any AI solutions in its operations. The company has not implemented artificial intelligence technologies on-premises, in the cloud, or in a hybrid environment. As such, Compass Group does not have any specific hardware, software, or network requirements related to AI deployment at this time.
+
+
+Batch 10:
+--------------------------------------------------------------------------------
+Compass Group does not currently utilize AI systems that integrate with existing IT infrastructure and databases in their operations. The company has not implemented any AI solutions that would require integration with electronic medical records (EMR), electronic health records (EHR), laboratory information systems (LIS), picture archiving and communication systems (PACS), or other healthcare-related databases.
+
+Compass Group has not developed or implemented any APIs or integration tools for connecting AI systems with healthcare data management platforms such as EMR/EHR, LIS, or PACS. The company's current technology stack does not include AI solutions that would necessitate such integrations in the healthcare sector.
+
+
+Batch 11:
+--------------------------------------------------------------------------------
+Compass Group does not currently implement or utilize an AI solution in its operations. The company has not developed or deployed any artificial intelligence systems that would require scalability considerations for handling increasing amounts of data or user requests.
+
+
+Batch 12:
+--------------------------------------------------------------------------------
+Compass Group does not currently use performance metrics to evaluate AI models. The company has not implemented any AI systems that require performance evaluation or real-time performance dashboards for users.
+
+Compass Group does not provide users with access to real-time performance dashboards for AI models, as the company has not deployed AI systems that would necessitate such monitoring tools.
+
+
+Batch 13:
+--------------------------------------------------------------------------------
+Compass Group does not currently have an AI solution that has been validated in real-world healthcare settings. The company's artificial intelligence technologies and applications are not specifically designed or implemented for healthcare environments, and therefore have not undergone validation studies in clinical or medical contexts.
+
+
+Batch 14:
+--------------------------------------------------------------------------------
+Compass Group does not currently implement user interface elements that support AI functionalities. The company's systems do not include dashboards, visualization tools, or interactive elements for end-users that are specifically designed to interact with or display AI-generated outputs or processes.
+
+Compass Group has not developed or implemented any specialized interfaces, dashboards, or visualization tools for end-users to interact with AI systems or view AI-generated insights within their technology infrastructure.
+
+
+Batch 15:
+--------------------------------------------------------------------------------
+Compass Group does not currently offer AI features that non-technical users can easily interact with and benefit from. The company has not implemented AI tools that would require training or onboarding for general users to understand and utilize effectively.
+
+Compass Group has not established any specific training or onboarding programs to help users understand and utilize AI tools effectively, as they do not currently deploy such tools for general user interaction within their operations.
+
+
+Batch 16:
+--------------------------------------------------------------------------------
+Compass Group does not provide ongoing support for AI components. The company has not implemented artificial intelligence technologies in its operations or services, so there are no AI-related support structures in place.
+
+Compass Group does not have a dedicated team for AI-related issues. As the company does not utilize AI technologies, there is no need for specialized personnel to handle AI-specific problems or concerns.
+
+Compass Group does not manage updates, patches, or bug fixes for AI systems. The company's current technology infrastructure does not include artificial intelligence components, so there are no AI-specific maintenance or update procedures in place.
+
+
+Batch 17:
+--------------------------------------------------------------------------------
+Compass Group does not currently employ AI models or systems that require ongoing accuracy and relevance checks. The company has no processes in place for regular validations, updates, or scheduled checks of AI models, as artificial intelligence is not a part of their current technological infrastructure or business operations.
+
+
+Batch 18:
+--------------------------------------------------------------------------------
+Compass Group does not currently utilize AI solutions in healthcare settings. The company has not implemented any AI technologies that would require compliance with ethical guidelines for AI in healthcare.
+
+Compass Group does not have specific processes in place to address issues like consent, patient safety, and ethical decision-making related to AI in healthcare, as the company does not employ AI solutions in this domain.
+
+
+Batch 19:
+--------------------------------------------------------------------------------
+Compass Group does not have safeguards in place to prevent AI-driven decisions from adversely affecting patient care, as this is not applicable to their operations. The company does not utilize AI systems for patient care decisions.
+
+Compass Group does not have a system in place for human oversight to override AI decisions in patient care, as they do not employ AI for such purposes in their business operations.
+
+
+Batch 20:
+--------------------------------------------------------------------------------
+Compass Group does not currently monitor the usage of AI functionalities within their systems. They do not have audit logs or reports specifically tracking AI usage in their operations or technology stack.
+
+
+Batch 21:
+--------------------------------------------------------------------------------
+Compass Group does not have a system that generates reports on AI model performance and outcomes. The company's current AI implementations do not include functionality for producing reports on metrics such as accuracy or false positives/negatives. This indicates that Compass Group may not have advanced AI monitoring or evaluation processes in place for their existing artificial intelligence applications.
+
+
+Batch 22:
+--------------------------------------------------------------------------------
+Compass Group does not have a system that allows users to provide feedback on AI outputs. The company's current AI implementations or processes do not include functionality for user feedback on AI-generated results.
+
+Compass Group does not have a process in place for using user feedback to improve AI models. The company's AI systems, if any exist, do not incorporate user input as a mechanism for model enhancement or refinement.
+
+
+Batch 23:
+--------------------------------------------------------------------------------
+Compass Group does not have a mechanism for continuous learning or adaptation based on user feedback and real-world data in their artificial intelligence systems. This suggests that their AI implementations, if any, do not incorporate dynamic learning capabilities or real-time adjustments based on user interactions or operational data.
+
+

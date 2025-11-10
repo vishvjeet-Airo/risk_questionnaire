@@ -1,0 +1,18 @@
+Facts for Sheet: How to use this questionnaire
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group's product requires hardware such as a server, workstation, or PC for its operation. The company acknowledges the need for hardware components to support their product functionality, indicating a reliance on physical computing infrastructure as part of their technology stack.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group's product has network components or requirements that include both wired and wireless connectivity. This indicates that the product relies on network infrastructure for its operation and functionality, suggesting it may be a networked device or software application that requires internet or local network access to function properly.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group's products do not include any medical devices. The company's offerings are not subject to specific medical device security requirements or regulations, indicating that their technology and service portfolio does not extend into the healthcare equipment or medical device sector.
+
+

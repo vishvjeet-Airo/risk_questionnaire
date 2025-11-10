@@ -1,5 +1,6 @@
 from qdrant_client import QdrantClient
-from qdrant_client.models import VectorParams, Distance, PointStruct
+from qdrant_client.models import VectorParams, Distance, PointStruct, Filter, FieldCondition, MatchAny, MatchValue
+from typing import Optional, List
 import uuid
 from app.core.config import settings
 from app.core.clients.bedrock import bedrock_client
@@ -16,12 +17,35 @@ qdrant = QdrantClient(
 
 
 def ensure_collection():
-    """Create Qdrant collection if it doesn’t exist."""
+    """Create Qdrant collection if it doesn't exist and ensure payload indexes."""
     if COLLECTION_NAME not in [c.name for c in qdrant.get_collections().collections]:
         qdrant.create_collection(
             collection_name=COLLECTION_NAME,
             vectors_config=VectorParams(size=VECTOR_DIM, distance=Distance.COSINE)
         )
+    
+    # Ensure payload indexes exist for efficient filtering
+    try:
+        # Create index for sectors if it doesn't exist
+        qdrant.create_payload_index(
+            collection_name=COLLECTION_NAME,
+            field_name="sectors",
+            field_schema="keyword"
+        )
+    except Exception:
+        # Index might already exist, which is fine
+        pass
+    
+    try:
+        # Create index for technologies if it doesn't exist
+        qdrant.create_payload_index(
+            collection_name=COLLECTION_NAME,
+            field_name="technologies",
+            field_schema="keyword"
+        )
+    except Exception:
+        # Index might already exist, which is fine
+        pass
 
 # Chunking strategy - consider one paragraph as a chunk considering the 
 # paragraphs are itself independent and contains enough context 
@@ -61,17 +85,67 @@ def embed_text(text: str) -> list[float]:
     emb = bedrock_client.embed_text(text)
     return emb
 
-def search_qdrant(query: str, top_k=5):
+def search_qdrant(
+    query: str, 
+    top_k: int = 5,
+    sectors: Optional[List[str]] = None,
+    technologies: Optional[List[str]] = None
+):
+    """
+    Search Qdrant with optional filtering by sectors and/or technologies.
+    
+    Args:
+        query: Search query text
+        top_k: Number of results to return
+        sectors: Optional list of sectors to filter by (any match)
+        technologies: Optional list of technologies to filter by (any match)
+        
+    Returns:
+        List of search results with text, score, sectors, and technologies
+    """
     vector = embed_text(query)
+    
+    # Build filter if sectors or technologies are provided
+    query_filter = None
+    if sectors or technologies:
+        must_conditions = []
+        
+        if sectors:
+            # Match any of the provided sectors
+            must_conditions.append(
+                FieldCondition(
+                    key="sectors",
+                    match=MatchAny(any=sectors)
+                )
+            )
+        
+        if technologies:
+            # Match any of the provided technologies
+            must_conditions.append(
+                FieldCondition(
+                    key="technologies",
+                    match=MatchAny(any=technologies)
+                )
+            )
+        
+        if must_conditions:
+            query_filter = Filter(must=must_conditions)
+    
+    # Perform search
     results = qdrant.search(
         collection_name=COLLECTION_NAME,
         query_vector=vector,
         limit=top_k,
+        query_filter=query_filter,
+        with_payload=True
     )
+    
     return [
         {
             "text": hit.payload.get("text", ""),
-            "score": hit.score
+            "score": hit.score,
+            "sectors": hit.payload.get("sectors", []),
+            "technologies": hit.payload.get("technologies", [])
         }
         for hit in results
     ]

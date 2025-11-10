@@ -5,7 +5,7 @@ from app.core.config import settings
 from sqlmodel import SQLModel
 
 # Import all your models here to register them with SQLModel
-from app.models.user import User  # This registers the User model
+from app.models import * # This registers the User model
 
 # Alembic Config object
 config = context.config

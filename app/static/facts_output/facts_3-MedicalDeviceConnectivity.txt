@@ -1,0 +1,156 @@
+Facts for Sheet: 3-MedicalDeviceConnectivity
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group's system does not include any medical devices. The engagement in question is specifically for vending machines, which are not classified as medical devices. This indicates that Compass Group's operations in this context are focused on food service and vending solutions rather than healthcare or medical technology.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group does not utilize any specific device connection methods such as RS-232, USB, proprietary, or Ethernet for medical device connectivity. The company's operations and technologies do not involve connecting medical devices, indicating this aspect is not applicable to their business processes or risk management practices in the healthcare sector.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group does not provide detailed documentation for connection specifications such as pin out, connector, or baud rate. This information is not applicable to their current operations or technologies in the medical device connectivity sector.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group's systems do not require a gateway to interface with external systems. This indicates that their medical device connectivity solutions are designed to operate independently or have direct integration capabilities without the need for intermediary gateway devices.
+
+
+Batch 5:
+--------------------------------------------------------------------------------
+Compass Group does not have a gateway output data system in place for medical device connectivity. The company's current infrastructure and technology stack do not include real-time data transmission capabilities for medical devices, as this functionality is not applicable to their operations or service offerings in the healthcare sector.
+
+
+Batch 6:
+--------------------------------------------------------------------------------
+Compass Group does not have a backup mechanism for gateways in its medical device connectivity systems. The company has not implemented measures to back up data in the event of gateway connection loss.
+
+Compass Group has not implemented an embedded high availability solution for its medical device connectivity systems.
+
+Compass Group does not have an embedded load sharing solution in place for its medical device connectivity infrastructure.
+
+
+Batch 7:
+--------------------------------------------------------------------------------
+Compass Group does not have any limitations on the number of beds, patients, devices, rooms, units, or facilities that each gateway can support in their medical device connectivity systems. This question is not applicable to their current operational setup, suggesting they either do not use such gateways or have a system that does not impose these types of constraints.
+
+
+Batch 8:
+--------------------------------------------------------------------------------
+Compass Group does not utilize or manage any medical devices or systems that require time synchronization or connection to NTP servers. This aspect of medical device connectivity is not applicable to Compass Group's operations or technological infrastructure.
+
+Time synchronization capabilities for medical devices, including the ability to sync with NTP servers, are not relevant to Compass Group's business processes or technology systems. The company does not operate or maintain such medical equipment as part of its core services or operations.
+
+
+Batch 9:
+--------------------------------------------------------------------------------
+Compass Group's medical devices and systems do not interact with hospital NTP servers for time synchronization. The company's equipment is not designed to obtain time from external sources, which eliminates concerns related to daylight saving time changes or potential data overwriting during time adjustments.
+
+
+Batch 10:
+--------------------------------------------------------------------------------
+Compass Group's medical device connectivity system does not output any patient, device, or alarm parameters. The system is not designed or utilized for handling such medical data or generating alerts related to patient care or medical device operations.
+
+
+Batch 11:
+--------------------------------------------------------------------------------
+Compass Group does not export data from medical devices. The company's systems and processes do not involve the extraction or handling of discrete, numeric, or continuous waveform data from medical equipment. This indicates that Compass Group's operations do not include direct interaction with or management of medical device data outputs.
+
+
+Batch 12:
+--------------------------------------------------------------------------------
+Compass Group does not send data at any frequency for medical device connectivity purposes. The company's systems and processes do not involve the transmission of data related to medical devices, indicating that this aspect of technology integration is not applicable to their current operations or services in the healthcare sector.
+
+
+Batch 13:
+--------------------------------------------------------------------------------
+Compass Group does not utilize or support any standard interface protocols such as HL7, XML, DICOM, or modality work lists for medical device connectivity. The company's operations do not involve medical devices that require these types of communication protocols, indicating that this aspect of medical device connectivity is not applicable to Compass Group's current technology infrastructure or healthcare-related services.
+
+
+Batch 14:
+--------------------------------------------------------------------------------
+Compass Group's products are not utilized in a hospital setting, and therefore do not require approval from a Nationally Recognized Testing Laboratory (NRTL) such as Underwriters Laboratories (UL). The company's operations and product offerings do not fall under the category that would necessitate NRTL certification for use in medical environments.
+
+
+Batch 15:
+--------------------------------------------------------------------------------
+Compass Group does not have medical devices that externally communicate with any other device or software. This question is not applicable to Compass Group's operations, as they do not utilize or manage medical devices as part of their business processes or technology infrastructure.
+
+
+Batch 16:
+--------------------------------------------------------------------------------
+Compass Group does not communicate with or offer integration to any medical devices, gateways, or servers. The company's operations and technological infrastructure do not include connectivity or integration services for medical equipment or related systems.
+
+
+Batch 17:
+--------------------------------------------------------------------------------
+Compass Group does not require any hardware or software for medical device integration. The company's operations and technologies do not involve medical device connectivity or integration, as this aspect is not applicable to their business processes or service offerings.
+
+
+Batch 18:
+--------------------------------------------------------------------------------
+Compass Group does not offer wired or wireless device integration solutions as part of its core business operations. The company's services and technologies do not include medical device connectivity or integration capabilities, as this is not applicable to their primary focus areas in food service and support services.
+
+
+Batch 19:
+--------------------------------------------------------------------------------
+Compass Group does not have a connectivity diagram or detailed description for integrating medical devices. The organization has indicated that this question is not applicable to their operations, suggesting they do not engage in medical device integration or connectivity within their systems or services.
+
+
+Batch 20:
+--------------------------------------------------------------------------------
+Compass Group does not have any licensing limitations related to medical devices. The company's operations and technology infrastructure do not involve medical device connectivity, making this aspect not applicable to their business processes or compliance requirements.
+
+
+Batch 21:
+--------------------------------------------------------------------------------
+Compass Group does not provide medical device driver development services. The company's operations and technologies do not include creating or guaranteeing new drivers for medical devices within specific timeframes, such as 90 days of notice. This aspect of medical device connectivity is not applicable to Compass Group's business model or technological offerings.
+
+
+Batch 22:
+--------------------------------------------------------------------------------
+Compass Group does not have a system that associates device data with patients. The company's operations and technologies do not involve medical device connectivity or patient data management in a healthcare context.
+
+
+Batch 23:
+--------------------------------------------------------------------------------
+Compass Group does not have the capability to format medical device data labeling to Virtua's standard and available fields. This functionality is not applicable to Compass Group's current operations or services in the healthcare sector.
+
+
+Batch 24:
+--------------------------------------------------------------------------------
+Compass Group does not cache data in the event of a network outage. The company's systems and applications do not implement data caching mechanisms for offline operation or temporary network disconnections, as this functionality is not applicable to their current technology infrastructure or operational requirements.
+
+
+Batch 26:
+--------------------------------------------------------------------------------
+Compass Group's systems do not have capabilities related to DICOM (Digital Imaging and Communications in Medicine) compatibility for medical images. The organization's technology infrastructure does not include functionality for importing or exporting images in DICOM format to or from PACS (Picture Archiving and Communication System) systems.
+
+Compass Group's operations do not involve handling or processing medical imaging data in DICOM format or interacting with PACS systems for image management in healthcare settings.
+
+
+Batch 27:
+--------------------------------------------------------------------------------
+Compass Group does not utilize or manage a Picture Archiving and Communication System (PACS) for medical imaging. The company's operations and technologies do not involve the identification or handling of medical images within a PACS environment, as this functionality is not applicable to their business processes or service offerings.
+
+
+Batch 28:
+--------------------------------------------------------------------------------
+Compass Group does not generate or handle images as part of its medical device connectivity operations. The company's systems and processes in this area do not involve image creation or manipulation, indicating that image size considerations are not applicable to their medical device connectivity technologies and workflows.
+
+
+Batch 29:
+--------------------------------------------------------------------------------
+Compass Group does not have a process for wiping data and Protected Health Information (PHI) from medical devices. This indicates that Compass Group either does not handle medical devices containing PHI or does not have direct responsibility for data sanitization on such devices in their operations.
+
+
+Batch 30:
+--------------------------------------------------------------------------------
+Compass Group does not have a specific policy or procedure regarding the removal of hard drives from medical devices. This aspect of medical device connectivity is not applicable to their current operations or technology infrastructure in healthcare settings.
+
+

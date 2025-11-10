@@ -1,0 +1,73 @@
+Facts for Sheet: 1-Hardware
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group's system for this engagement does not run on or require access from PCs. Instead, the company is providing vending machines as part of the system implementation. This indicates that Compass Group's solution for this particular service or operation is based on standalone vending machine technology rather than traditional computer-based systems.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group does not provide a client-based or web-based application for vending services. Instead, the company offers physical vending machines for snack and beverage purchasing, which are standalone units that do not require software applications for customer use.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group does not utilize web-based applications that require browser support for Chromium Edge. The question of Chromium Edge support is not applicable to Compass Group's current technology infrastructure and web application deployment strategy.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group does not specify minimum or recommended hardware specifications for client devices to access their systems or applications. This suggests their solutions may be platform-agnostic or cloud-based, allowing for flexibility in the types of devices that can be used to interact with their services.
+
+
+Batch 5:
+--------------------------------------------------------------------------------
+Compass Group's system does not include any vendor-provided PCs or hardware. The organization's technology infrastructure is managed independently of external hardware providers, indicating full control over their hardware resources and potentially enhanced security measures for their systems.
+
+
+Batch 6:
+--------------------------------------------------------------------------------
+Compass Group's systems are not certified to operate on Windows 11 workstations. The company does not have specific requirements or certifications for 32-bit or 64-bit Windows 11 operating systems in their current technology infrastructure.
+
+
+Batch 7:
+--------------------------------------------------------------------------------
+Compass Group does not utilize or support Windows 10 in its operations. The company's technology infrastructure and systems are not dependent on Windows 10 versions, indicating that alternative operating systems or platforms are likely used for their business processes and services.
+
+
+Batch 8:
+--------------------------------------------------------------------------------
+Compass Group's application does not require any other applications to be installed on workstations for proper operation. The application is designed to function independently without relying on additional software, simplifying deployment and reducing potential compatibility issues across the organization's computing environment.
+
+
+Batch 9:
+--------------------------------------------------------------------------------
+Compass Group does not have a policy or process in place regarding operating system patching by external parties. The question of whether an external entity is allowed to patch the operating system with security updates is not applicable to Compass Group's current IT infrastructure and security management practices.
+
+
+Batch 10:
+--------------------------------------------------------------------------------
+Compass Group does not allow external entities to install anti-virus software on their systems. The company maintains its own security measures and software management protocols for its IT infrastructure, which likely includes proprietary or carefully selected anti-virus solutions tailored to their specific needs and compliance requirements.
+
+
+Batch 11:
+--------------------------------------------------------------------------------
+Compass Group's application infrastructure does not require local administrator rights on desktop computers for operation. This indicates that the company's software applications are designed to function with standard user permissions, which is a security best practice that reduces potential vulnerabilities associated with elevated user privileges.
+
+
+Batch 12:
+--------------------------------------------------------------------------------
+Compass Group's systems do not include software designed to run on mobile devices such as iPads or Android tablets. The company has indicated that this aspect is not applicable to their current technology infrastructure and operational practices.
+
+
+Batch 13:
+--------------------------------------------------------------------------------
+Compass Group's system for this engagement does not require a server. The company is providing vending machines as part of their service offering, which operate independently without the need for a centralized server infrastructure or additional storage specifications.
+
+
+Batch 14:
+--------------------------------------------------------------------------------
+Compass Group utilizes vending machines as part of its hardware infrastructure. These vending machines are classified as a specific type of hardware device within the company's technology ecosystem, potentially interfacing with other systems for inventory management, payment processing, or remote monitoring.
+
+

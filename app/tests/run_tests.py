@@ -53,11 +53,91 @@ def run_qdrant_tests():
         traceback.print_exc()
 
 
+def run_qdrant_filtering_tests():
+    """Run Qdrant filtering tests."""
+    print("\n" + "=" * 60)
+    print("Running Qdrant Filtering Tests")
+    print("=" * 60)
+    from app.tests.test_qdrant_filtering import TestQdrantFiltering
+    
+    test_instance = TestQdrantFiltering()
+    
+    try:
+        # Setup test data first
+        print("\nStep 1: Setting up test data...")
+        if not test_instance.setup_test_data():
+            print("\n❌ Failed to setup test data. Exiting.")
+            return
+        
+        print("\nStep 2: Running filtering tests...\n")
+        
+        test_instance.test_search_without_filters()
+        print()
+        
+        test_instance.test_search_with_sector_filter()
+        print()
+        
+        test_instance.test_search_with_technology_filter()
+        print()
+        
+        test_instance.test_search_with_both_filters()
+        print()
+        
+        test_instance.test_search_with_multiple_sectors()
+        print()
+        
+        test_instance.test_search_with_multiple_technologies()
+        print()
+        
+        test_instance.test_search_with_multiple_filters()
+        print()
+        
+        test_instance.test_search_with_nonexistent_filter()
+        print()
+        
+        test_instance.test_search_with_empty_filters()
+        print()
+        
+        test_instance.test_specific_query_with_filters()
+        print()
+        
+        print("\n✓ All Qdrant filtering tests passed!")
+        print("\nNote: Test data has been inserted into Qdrant.")
+        print("      You may want to clean up the test data if needed.")
+    except Exception as e:
+        print(f"\n✗ Qdrant filtering tests failed: {e}")
+        import traceback
+        traceback.print_exc()
+
+
 if __name__ == "__main__":
-    # Run all tests
-    run_bedrock_tests()
-    run_qdrant_tests()
+    import sys
+    
+    # Check if specific test is requested
+    if len(sys.argv) > 1:
+        test_type = sys.argv[1].lower()
+        if test_type == "bedrock":
+            run_bedrock_tests()
+        elif test_type == "qdrant":
+            run_qdrant_tests()
+        elif test_type == "filtering":
+            run_qdrant_filtering_tests()
+        else:
+            print(f"Unknown test type: {test_type}")
+            print("Available: bedrock, qdrant, filtering")
+    else:
+        # Run all tests
+        run_bedrock_tests()
+        run_qdrant_tests()
+        
+        # Note: Filtering tests are not run by default as they insert test data
+        # Uncomment the line below to include them:
+        # run_qdrant_filtering_tests()
     
     print("\n" + "=" * 60)
     print("All tests completed!")
     print("=" * 60)
+    print("\nTo run filtering tests separately, use:")
+    print("  python -m app.tests.run_tests filtering")
+    print("  or")
+    print("  python app/tests/test_qdrant_filtering.py")

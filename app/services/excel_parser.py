@@ -81,6 +81,130 @@ def get_cell_color_info(cell):
     return None
 
 
+def sheet_to_table_text(sheet, sheet_name: str, historical: bool = True) -> str:
+    """
+    Convert a single Excel sheet into a text representation.
+    
+    Args:
+        sheet: openpyxl worksheet object
+        sheet_name: Name of the sheet
+        historical (bool): 
+            - True → only keep chosen values (ignore dropdown options), show colors for ALL cells
+            - False → include dropdown options, show colors only for empty cells
+    
+    Returns:
+        str: Text representation of the sheet including:
+            - Cell values and coordinates
+            - Dropdown options (when historical=False)
+            - Cell background colors (format: color:color_name)
+            - Cell comments
+            - Empty cells with formatting (colors) are included
+    """
+    if sheet.sheet_state != "visible":
+        return ""
+    
+    output_lines = [f"[Sheet: {sheet_name}]"]
+
+    # Build map of cell → dropdown formula
+    dropdowns = {}
+    if sheet.data_validations:
+        for dv in sheet.data_validations.dataValidation:
+            if dv.formula1:
+                for ref in dv.sqref:  # MultiCellRange
+                    min_col, min_row, max_col, max_row = range_boundaries(str(ref))
+                    for r in range(min_row, max_row + 1):
+                        for c in range(min_col, max_col + 1):
+                            coord = sheet.cell(row=r, column=c).coordinate
+                            dropdowns[coord] = dv.formula1
+
+    # Track consecutive empty rows to stop processing early
+    consecutive_empty_rows = 0
+    MAX_CONSECUTIVE_EMPTY_ROWS = 10
+    
+    # Iterate rows
+    for row in sheet.iter_rows(values_only=False):
+        current_row_num = row[0].row
+        row_has_data = False
+        row_lines = [f"Row {current_row_num}"]
+        
+        # Track consecutive None cells in this row
+        consecutive_none_cells = 0
+        MAX_CONSECUTIVE_NONE_CELLS = 10
+
+        for cell in row:
+            # Get color information first
+            color_info = get_cell_color_info(cell)
+            
+            # Check if cell is empty (no value, no comment, no color)
+            is_empty = cell.value is None and not cell.comment and not color_info
+            
+            if is_empty:
+                consecutive_none_cells += 1
+                # If we hit 11 consecutive None cells, skip the rest of this row
+                if consecutive_none_cells > MAX_CONSECUTIVE_NONE_CELLS:
+                    break
+                continue
+            else:
+                # Reset counter when we find a cell with data
+                consecutive_none_cells = 0
+            
+            # Only include cells that have content OR are empty but colored
+            if cell.value is None and not cell.comment and not color_info:
+                continue
+            row_has_data = True
+            dropdown_options = None
+
+            # Check if this cell has a dropdown
+            if cell.coordinate in dropdowns and not historical:
+                formula = dropdowns[cell.coordinate]
+                if formula.startswith("{"):
+                    # Inline list {"Yes","No","Maybe"}
+                    dropdown_options = [opt.strip('"') for opt in formula.strip("{}").split(",")]
+                else:
+                    # Cell range reference like A1:A3
+                    try:
+                        min_col, min_row, max_col, max_row = range_boundaries(formula)
+                        dropdown_values = []
+                        for r in sheet.iter_rows(min_row=min_row, max_row=max_row,
+                                                 min_col=min_col, max_col=max_col):
+                            for c in r:
+                                if c.value is not None:
+                                    dropdown_values.append(str(c.value))
+                        dropdown_options = dropdown_values
+                    except Exception:
+                        dropdown_options = [formula]
+
+            # Build line
+            line = f"{cell.coordinate} = \"{cell.value}\"" if cell.value is not None else f"{cell.coordinate} = (empty)"
+            if dropdown_options:
+                line += f" (Options: {' | '.join(dropdown_options)})"
+            # Show color based on historical mode
+            if color_info:
+                if historical:
+                    # Historical mode: show colors for all cells
+                    line += f" ({color_info})"
+                else:
+                    # Non-historical mode: only show colors for empty cells
+                    if cell.value is None:
+                        line += f" ({color_info})"
+            if cell.comment:
+                line += f" (Comment: {cell.comment.text.strip()})"
+
+            row_lines.append(line)
+
+        if row_has_data:
+            consecutive_empty_rows = 0  # Reset counter when we find a row with data
+            output_lines.extend(row_lines)
+        else:
+            # Row has no data
+            consecutive_empty_rows += 1
+            # If we hit 11 consecutive empty rows, stop processing the sheet
+            if consecutive_empty_rows > MAX_CONSECUTIVE_EMPTY_ROWS:
+                break
+
+    return "\n".join(output_lines)
+
+
 def excel_to_table_text(file_path: str, historical: bool = True) -> str:
     """
     Convert Excel file into a text representation.
@@ -106,76 +230,10 @@ def excel_to_table_text(file_path: str, historical: bool = True) -> str:
         sheet = workbook[sheet_name]
         if sheet.sheet_state != "visible":
             continue  # skip hidden sheets
-        output_lines.append(f"[Sheet: {sheet_name}]")
-
-        # Build map of cell → dropdown formula
-        dropdowns = {}
-        if sheet.data_validations:
-            for dv in sheet.data_validations.dataValidation:
-                if dv.formula1:
-                    for ref in dv.sqref:  # MultiCellRange
-                        min_col, min_row, max_col, max_row = range_boundaries(str(ref))
-                        for r in range(min_row, max_row + 1):
-                            for c in range(min_col, max_col + 1):
-                                coord = sheet.cell(row=r, column=c).coordinate
-                                dropdowns[coord] = dv.formula1
-
-        # Iterate rows
-        for row in sheet.iter_rows(values_only=False):
-            row_has_data = False
-            row_lines = [f"Row {row[0].row}"]
-
-            for cell in row:
-                # Get color information first
-                color_info = get_cell_color_info(cell)
-                # print(color_info)
-                
-                # Only include cells that have content OR are empty but colored
-                if cell.value is None and not cell.comment and not color_info:
-                    continue
-                row_has_data = True
-                dropdown_options = None
-
-                # Check if this cell has a dropdown
-                if cell.coordinate in dropdowns and not historical:
-                    formula = dropdowns[cell.coordinate]
-                    if formula.startswith("{"):
-                        # Inline list {"Yes","No","Maybe"}
-                        dropdown_options = [opt.strip('"') for opt in formula.strip("{}").split(",")]
-                    else:
-                        # Cell range reference like A1:A3
-                        try:
-                            min_col, min_row, max_col, max_row = range_boundaries(formula)
-                            dropdown_values = []
-                            for r in sheet.iter_rows(min_row=min_row, max_row=max_row,
-                                                     min_col=min_col, max_col=max_col):
-                                for c in r:
-                                    if c.value is not None:
-                                        dropdown_values.append(str(c.value))
-                            dropdown_options = dropdown_values
-                        except Exception:
-                            dropdown_options = [formula]
-
-                # Build line
-                line = f"{cell.coordinate} = \"{cell.value}\"" if cell.value is not None else f"{cell.coordinate} = (empty)"
-                if dropdown_options:
-                    line += f" (Options: {' | '.join(dropdown_options)})"
-                # Show color based on historical mode
-                if color_info:
-                    if historical:
-                        # Historical mode: show colors for all cells
-                        line += f" ({color_info})"
-                    else:
-                        # Non-historical mode: only show colors for empty cells
-                        if cell.value is None:
-                            line += f" ({color_info})"
-                if cell.comment:
-                    line += f" (Comment: {cell.comment.text.strip()})"
-
-                row_lines.append(line)
-
-            if row_has_data:
-                output_lines.extend(row_lines)
+        
+        sheet_text = sheet_to_table_text(sheet, sheet_name, historical)
+        if sheet_text:
+            output_lines.append(sheet_text)
 
     return "\n".join(output_lines)
 

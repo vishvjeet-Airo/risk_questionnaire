@@ -1,0 +1,89 @@
+Facts for Sheet: .2 D&I - identified IT controls
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group has an IT strategic planning and risk management process in place to support its financial reporting requirements. This includes the use of technologies such as Agilysys for POS and Mobile Ordering, SquareSpace for dining websites, Triple Seat integrated with Authorize.net for payment processing, and no reservation system for some operations.
+
+Compass Group has a management steering committee responsible for reviewing and approving IT plans and priorities.
+
+IT management at Compass Group conducts regular risk assessments and addresses noted risks appropriately.
+
+Compass Group evaluates all outside service providers to determine those who provide material financial services that may impact controls.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group maintains reliable systems that include appropriate data backup and recovery processes. They have implemented a backup and data retention policy that specifies the frequency of backups, retention periods, and storage locations for backup media. Application data backups are performed regularly to minimize the risk of data loss or corruption, with backup media securely accessible only by authorized personnel. Application data recovery procedures are tested at least annually to ensure data integrity and recovery capabilities.
+
+Compass Group performs file server backups to minimize the risk of lost or corrupted data, with backup media securely accessible only by authorized personnel. File server recovery procedures are tested at least once annually to ensure data integrity and recovery capabilities.
+
+Compass Group controls and monitors batch processing to ensure proper completion of tasks. They maintain proper access controls for scheduled job content and the scheduler system.
+
+Compass Group implements appropriate controls for interfaces between systems to ensure complete and accurate transfer of data.
+
+Compass Group has established appropriate environmental controls to ensure the security and reliability of equipment in data centers and other technical facilities. These controls include fire/smoke detection and suppression systems, temperature and humidity controls, and uninterruptible power supplies or backup generators where required.
+
+Compass Group's IT management has defined and implemented a problem management and change management tracking system. This system ensures that key compliance-related events and non-standard operational events (such as incidents, problems, and errors) are recorded, analyzed, and resolved in a timely manner.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group has an information security policy that defines information security objectives, supported by necessary documents, standards, and procedures.
+
+Compass Group has procedures in place to ensure timely action for requesting, establishing, issuing, suspending, modifying, and closing user accounts.
+
+Compass Group sets up new user accounts in network, application, and database environments in response to properly authorized requests from management.
+
+Compass Group reviews user access rights when they are modified due to job transfers or other reasons, removing unnecessary access rights and granting additional rights based on properly authorized management requests.
+
+Compass Group removes or suspends user access rights in a timely manner when employees are terminated, with standards defining timeliness requirements for various situations such as voluntary or involuntary termination.
+
+Compass Group grants user access rights for network, application, and database on a need-to-know, need-to-do basis.
+
+Compass Group ensures that user access rights for network, application, and database support necessary segregation of duties as defined by financial areas' reliance on automated controls.
+
+Compass Group has appropriate IT segregation of duties controls in place, including separation of IT personnel from transaction and accounting duties, security administration from programming and operations, and restricting programmers/developers from modifying production software code.
+
+Compass Group's application data owners perform periodic reviews of user access rights for all in-scope applications and network access when required.
+
+Compass Group appropriately restricts database access, including the ability to read, modify, or delete key financial data either directly or via ODBC.
+
+Compass Group has procedures to maintain the effectiveness of authentication and access mechanisms, including password length, history, expiration, and lockout for failed attempts.
+
+Compass Group ensures all users are identified uniquely, with no shared IDs except for limited, read-only access, and appropriate limitations on access rights for any generic IDs.
+
+Compass Group appropriately restricts physical access to computer rooms, file/communication servers, off-line data storage, and other sensitive storage to authorized personnel, with periodic reviews for appropriateness.
+
+Compass Group has controls in place for perimeter and network security, which may include firewalls, routers, terminal service devices, wireless security, intrusion detection, and vulnerability assessments where appropriate.
+
+Compass Group prohibits software users from having access to source code, the compiler, and programming documentation.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group has a formalized objective to ensure that program changes and systems acquisition and development are appropriately managed to support financial reporting objectives. This objective is met, indicating strong controls in place for software development and change management processes.
+
+Compass Group has implemented formalized change management policies and procedures that are updated as required, ensuring a structured approach to managing changes in their IT environment.
+
+Compass Group utilizes a centralized change tracking database or system to track application, database, and operating system changes, providing a comprehensive view of all modifications made to their IT infrastructure.
+
+Compass Group requires documented user acceptance before migrating application and database changes to production, and IT management approval for operating system changes, ensuring proper validation and authorization of changes.
+
+Compass Group maintains application source code version control via change control software or other means for applications where they have source code, enabling effective tracking and management of code changes.
+
+Compass Group has a process for handling emergency changes at the application, database, and operating system levels. These changes are documented, subject to formal change controls, reviewed after implementation, and promptly notified to data owners for approval where appropriate.
+
+Compass Group has controls in place to allow only authorized individuals to migrate application programs to production for applications where they have source code, ensuring the integrity and security of the production environment.
+
+Compass Group has implemented a formal change management policy that outlines minimum requirements for change control and system development across the organization. This policy addresses system security, availability, and processing integrity considerations in the development of new systems and major changes to existing systems, including application controls.
+
+Compass Group formally considers and documents application controls during the implementation of new information systems, ensuring that appropriate controls are integrated from the outset.
+
+Compass Group involves subject matter experts, as indicated by the application data owner, in deriving application system requirements, ensuring that the systems meet the needs of the business and end-users.
+
+Compass Group develops and follows a test plan for all major implementation projects, which includes unit, system, integration, interface, and data conversion testing as appropriate, ensuring comprehensive validation of new systems and changes.
+
+Compass Group performs user acceptance testing on all user-requested projects. These tests are completed and documented prior to moving changes into production, ensuring that the changes meet user requirements and expectations.
+
+

@@ -1,0 +1,203 @@
+Facts for Sheet: PAQ Controls 
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product requires passwords to be at least 8 characters in length for access management.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in their Healthcare sector, implements passwords that contain mixed case alpha characters as part of their access management controls.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product passwords contain at least one numeric digit. This security measure is part of their access management controls for the Healthcare sector.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product requires passwords to contain at least one non-alphanumeric character, enhancing password complexity and security for access management.
+
+
+Batch 5:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in their Healthcare sector, implements password expiration policies. Current product passwords in TaskUp expire every 90 days as part of their access management controls.
+
+
+Batch 6:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in their Healthcare sector, obscures the authenticator/password during the authentication process as part of its access management and password security features.
+
+
+Batch 7:
+--------------------------------------------------------------------------------
+Passwords within Compass Group's TaskUp application, used in their Healthcare sector, are encrypted when stored or transmitted. This applies to the Access Management component of the product.
+
+
+Batch 8:
+--------------------------------------------------------------------------------
+TaskUp, a technology provided by Compass Group in the Healthcare sector, uses LDAP/SAML or multifactor authentication for identification and authentication in its account management processes.
+
+
+Batch 9:
+--------------------------------------------------------------------------------
+Compass Group reviews accounts for the TaskUp product on a quarterly basis. This account management practice is implemented in their Healthcare sector operations.
+
+
+Batch 10:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in the Healthcare sector, automatically locks out user accounts after 10 invalid login attempts, which exceeds the recommended maximum of 6 unsuccessful logon attempts before lockout.
+
+
+Batch 11:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product does not terminate or lock sessions after 30 minutes or less of inactivity. This applies to the account management and session lock/termination features of TaskUp, which is used in Compass Group's Healthcare sector.
+
+
+Batch 12:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product ensures that all users are uniquely authenticated and authorized for access. This security measure is implemented for the Healthcare sector of Compass Group's operations.
+
+
+Batch 13:
+--------------------------------------------------------------------------------
+TaskUp, a technology provided by Compass Group for the Healthcare sector, implements role-based security to grant privileges to individuals. The product ensures that each role or group is given only the rights required to perform their specific duties, adhering to the principle of least privilege in account management.
+
+
+Batch 14:
+--------------------------------------------------------------------------------
+Compass Group identifies, reports, and corrects product flaws for TaskUp, their technology product used in the Healthcare sector. This includes performing penetration and security testing for the product as part of their flaw remediation process.
+
+
+Batch 15:
+--------------------------------------------------------------------------------
+Compass Group reviews and approves configuration changes prior to implementation as part of their change management process for the TaskUp application in their Healthcare sector operations.
+
+
+Batch 16:
+--------------------------------------------------------------------------------
+Compass Group re-tests and validates controls after changes to configuration are made. This applies to their change control validation process within the audit and assessment framework for their TaskUp technology used in the Healthcare sector.
+
+
+Batch 17:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in their Healthcare sector, generates alerts to notify the team in the event of a control failure, such as issues with logging or virus updates.
+
+
+Batch 18:
+--------------------------------------------------------------------------------
+Compass Group reviews the TaskUp product audit logs for indications of inappropriate or unusual activity. This audit review process is part of their Audit & Assessment controls, specifically under the category of Audit Review, Analysis, and Reporting.
+
+
+Batch 19:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in their Healthcare sector, captures audit logs sufficient for incident response and system and user performance/investigation.
+
+
+Batch 20:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in the Healthcare sector, creates audit records to establish the type of event that occurred. This functionality is part of the product's audit and logging capabilities.
+
+
+Batch 21:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product creates audit records to establish when events occurred. This functionality is part of the product's audit and logging capabilities.
+
+
+Batch 22:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product creates audit records to establish who performed events that occurred within the system. This functionality is part of the product's audit and logging capabilities, which are relevant to Compass Group's operations in the Healthcare sector.
+
+
+Batch 23:
+--------------------------------------------------------------------------------
+TaskUp, a technology provided by Compass Group for the Healthcare sector, creates audit records to establish the source of events.
+
+
+Batch 24:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product protects audit information from unauthorized access, modification, and deletion in their Healthcare sector operations.
+
+
+Batch 25:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product retains audit records. This configuration feature supports audit record retention for the TaskUp application used in Compass Group's Healthcare sector.
+
+
+Batch 26:
+--------------------------------------------------------------------------------
+Compass Group restricts or prohibits the use of functions, ports, protocols, and services that are not essential to the function of TaskUp in the Healthcare sector.
+
+
+Batch 27:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product protects the security and integrity of transmitted information. This applies to their operations in the Healthcare sector.
+
+
+Batch 28:
+--------------------------------------------------------------------------------
+Compass Group does not use web tracking code such as Meta Pixel, Google analytics (Google Tag Manager, JavaScript, Mixpanel, Matomo, Piwi) to collect information and track website visitor activity for their TaskUp application in the Healthcare sector.
+
+
+Batch 29:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in their Healthcare sector, supports the capability to use cryptographic mechanisms to protect information at rest.
+
+
+Batch 30:
+--------------------------------------------------------------------------------
+Compass Group's developers and coders undergo appropriate training and certification processes as part of their Software Development Life Cycle (SDLC) practices. This ensures the necessary expertise for developing and maintaining technologies like TaskUp in the Healthcare sector.
+
+
+Batch 31:
+--------------------------------------------------------------------------------
+Compass Group leverages peer reviews to review code before system implementation in their software development lifecycle (SDLC) process for the TaskUp technology used in their Healthcare sector.
+
+
+Batch 32:
+--------------------------------------------------------------------------------
+Compass Group develops the TaskUp application or software in accordance with OWASP (Open Web Application Security Project) standards as part of their secure development lifecycle (SDLC) process. This practice is applied in the Healthcare sector of Compass Group's operations.
+
+
+Batch 33:
+--------------------------------------------------------------------------------
+Compass Group uses a defined system development lifecycle method and process to develop the TaskUp system. The specific SDLC method used includes secure coding practices.
+
+
+Batch 34:
+--------------------------------------------------------------------------------
+Compass Group has a defined lifecycle process for the TaskUp system, covering implementation, retirement, disposal, and data retention. This process applies to the Healthcare sector within Compass Group.
+
+
+Batch 35:
+--------------------------------------------------------------------------------
+Compass Group's product TaskUp, used in their Healthcare sector, was developed or required to be implemented using open source code, share source code, technology, or tools as part of their software development life cycle (SDLC) sourcing process.
+
+
+Batch 36:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp product, used in their Healthcare sector, is currently running on a supported version as confirmed by the vendor.
+
+
+Batch 37:
+--------------------------------------------------------------------------------
+The TaskUp product provided by Compass Group has an anti-virus/anti-malware protection running with current updated signatures upon release.
+
+
+Batch 38:
+--------------------------------------------------------------------------------
+Compass Group uses a third-party hosting provider for their TaskUp system. The system is hosted on Amazon Web Services (AWS).
+
+
+Batch 39:
+--------------------------------------------------------------------------------
+Compass Group does not have a third party responsible for maintenance or configuration of TaskUp in their Healthcare sector.
+
+
+Batch 40:
+--------------------------------------------------------------------------------
+Compass Group's TaskUp application, used in their Healthcare sector, is not accessible by offshore third parties.
+
+

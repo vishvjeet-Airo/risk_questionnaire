@@ -1,0 +1,277 @@
+Facts for Sheet: 2-Network
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group's system, device, or application will not be connected to the Virtua network. This indicates that Compass Group maintains separation between its technological infrastructure and the Virtua network, potentially for security, compliance, or operational reasons.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group's system utilizes multiple devices that require IP connectivity. The primary device in this system is a Point-to-Point Encrypted (P2PE) terminal that establishes a direct real-time connection to the card processor when items are checked out, ensuring secure payment processing.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group's system does not require wireless IP connectivity for its operations. Instead, the system utilizes a Point-to-Point Encrypted (P2PE) direct real-time connection to the card processor when items are checked out, ensuring secure and immediate transaction processing without relying on wireless networks.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group's vending machine operations do not utilize TCP/IP over Ethernet communications. The company's vending machine services are not dependent on network protocols typically associated with computer networks, as the nature of their vending machine business does not require such connectivity for its core functionality.
+
+
+Batch 5:
+--------------------------------------------------------------------------------
+Compass Group's systems do not have a specific requirement or capability for auto-negotiating the speed and duplexing of Ethernet connections to network switches. This aspect of network configuration is not applicable to their current infrastructure or operational needs.
+
+
+Batch 6:
+--------------------------------------------------------------------------------
+Compass Group does not provide specific information about the speeds and duplexing of Ethernet connections supported in their network infrastructure. The lack of details suggests that this information may not be applicable to their current network setup or that they do not disclose such technical specifications externally for security reasons.
+
+
+Batch 7:
+--------------------------------------------------------------------------------
+Compass Group's systems are not required to be compatible with a fully routed IP network. The organization has indicated that this question is not applicable to their current network infrastructure or system requirements. This suggests that Compass Group may use alternative network configurations or that IP network routing compatibility is not a relevant consideration for their specific systems and operations.
+
+
+Batch 8:
+--------------------------------------------------------------------------------
+Compass Group's system does not use DHCP (Dynamic Host Configuration Protocol) for IP address assignment. The company's response indicates that DHCP capabilities are not applicable to their network infrastructure, suggesting they may use alternative methods for IP address management and network configuration.
+
+
+Batch 9:
+--------------------------------------------------------------------------------
+Compass Group's systems do not depend on IP Multicast for any functionality. The company has confirmed that IP Multicast is not applicable to their current network infrastructure or operational requirements.
+
+
+Batch 10:
+--------------------------------------------------------------------------------
+Compass Group's vending machine systems are not designed to be used in a WAN environment. The question about WAN-friendly databases, host/server interactions, and latency sensitivity is not applicable to their vending machine operations, as these systems do not require wide area network connectivity for their core functionality.
+
+
+Batch 11:
+--------------------------------------------------------------------------------
+Compass Group does not have specific system response time metrics for varying numbers of users (5, 20, and 100) in their network infrastructure. The company has indicated that this information is not applicable to their current systems or operational setup, suggesting that either their network performance is not measured in this way or that such granular user-based response times are not monitored or relevant to their network architecture.
+
+
+Batch 12:
+--------------------------------------------------------------------------------
+Compass Group does not provide specific information about system startup times for different numbers of users. The company has not disclosed details about login times or system presentation speed for 5, 20, or 100 users. Information about whether the time from user login to system presentation is less than 6 seconds is not available.
+
+
+Batch 13:
+--------------------------------------------------------------------------------
+Compass Group does not have a specific solution in place to address significant system slowdowns. The company's network infrastructure and performance management practices do not include dedicated measures for handling situations where system performance is severely degraded.
+
+
+Batch 14:
+--------------------------------------------------------------------------------
+Compass Group's vending machine operations do not require a wireless network. The company's vending machine systems are designed to function independently without relying on wireless connectivity for their core operations.
+
+
+Batch 15:
+--------------------------------------------------------------------------------
+Compass Group's systems do not include or require devices that use radio transmissions. This aspect of their technology infrastructure does not involve wireless communication technologies that rely on radio waves for data transmission or device connectivity.
+
+
+Batch 16:
+--------------------------------------------------------------------------------
+Compass Group's systems do not include or require 802.11 wireless connectivity. The company's network infrastructure and technology solutions are designed and implemented without the need for wireless local area network (WLAN) technologies based on the IEEE 802.11 standards, including variants such as 802.11g, 802.11n, 802.11ac, or 802.11ax.
+
+
+Batch 17:
+--------------------------------------------------------------------------------
+Compass Group's system does not support 5GHz wireless networking, as this feature is not applicable to their current network infrastructure or operational requirements. The company's network and technology implementations are designed to meet their specific business needs without relying on 5GHz wireless capabilities.
+
+
+Batch 18:
+--------------------------------------------------------------------------------
+Compass Group does not require its own wireless infrastructure for its operations. This indicates that the company likely relies on existing wireless networks or other connectivity solutions provided by external parties or facilities where they operate, rather than maintaining their own dedicated wireless systems.
+
+
+Batch 19:
+--------------------------------------------------------------------------------
+Compass Group's systems do not utilize any specific frequency ranges for their operations. The company has indicated that frequency range considerations are not applicable to their current technological infrastructure or network setup.
+
+
+Batch 20:
+--------------------------------------------------------------------------------
+Compass Group does not utilize or support WPA-2 Enterprise with AES encryption in their network infrastructure. This wireless security protocol is not applicable to their current network configuration or security practices.
+
+
+Batch 21:
+--------------------------------------------------------------------------------
+Compass Group does not utilize or support devices with WPA2-Enterprise and PEAP (MS-CHAPv2) security methods in their network infrastructure. This question regarding specific wireless security protocols is not applicable to Compass Group's current network architecture and device management practices.
+
+
+Batch 22:
+--------------------------------------------------------------------------------
+Compass Group's devices do not support WPA2-Enterprise with PEAP (TLS) security method. The company has indicated that this security feature is not applicable to their network infrastructure or device configuration. Compass Group may use alternative security methods for their wireless network access, but specific supported methods have not been provided in this context.
+
+
+Batch 23:
+--------------------------------------------------------------------------------
+Compass Group's devices do not connect to the existing wireless infrastructure. This indicates that the company maintains its own separate network infrastructure or does not require wireless connectivity for its operations in this context.
+
+
+Batch 24:
+--------------------------------------------------------------------------------
+Compass Group does not utilize or support Captive Portal type authentication for its devices. This authentication method is not applicable to the company's current network security infrastructure and device management practices.
+
+
+Batch 25:
+--------------------------------------------------------------------------------
+Compass Group's system does not require remote support for its operations. The organization has implemented a network infrastructure that can be fully managed and maintained without the need for external remote access, enhancing security and reducing potential vulnerabilities associated with remote system administration.
+
+
+Batch 26:
+--------------------------------------------------------------------------------
+Compass Group's vending machines do not require VPN connectivity for their system operations. This indicates that the company's vending machine infrastructure is designed to function without the need for a virtual private network, suggesting a different approach to network security and data transmission for these devices.
+
+
+Batch 27:
+--------------------------------------------------------------------------------
+Compass Group utilizes Point-to-Point Encryption (P2PE) for its production connectivity requirements. This involves a direct, real-time connection to the card processor when items are checked out, ensuring secure transmission of payment data. The use of P2PE technology demonstrates Compass Group's commitment to maintaining robust security measures for financial transactions and compliance with payment card industry standards.
+
+
+Batch 28:
+--------------------------------------------------------------------------------
+Compass Group does not use Citrix remote access for remote support of their systems or applications. The company's remote access and support solutions are not dependent on or impacted by Citrix technology, indicating that they likely employ alternative remote access methods for system and application support that are more suitable for their specific operational needs and security requirements.
+
+
+Batch 29:
+--------------------------------------------------------------------------------
+Compass Group does not have a specific reason for not implementing a particular network security measure or control. The company has indicated that this question is not applicable to their current network security practices or infrastructure, suggesting that the referenced security measure may already be in place or is not relevant to their specific network architecture and security approach.
+
+
+Batch 30:
+--------------------------------------------------------------------------------
+Compass Group's systems do not require VPN connectivity for interfacing with other Virtua systems. The company's network architecture is designed to operate independently without the need for external VPN connections to Virtua's infrastructure.
+
+Compass Group does not have any specific systems that require VPN connectivity to interface with Virtua's systems. This reflects the company's self-contained network design and operational independence.
+
+Compass Group does not have any data ports that would be required for VPN connectivity with Virtua systems. The company's network security protocols and infrastructure are configured to operate without the need for dedicated VPN data port allocations for external system interfaces.
+
+
+Batch 31:
+--------------------------------------------------------------------------------
+Compass Group's vending machine systems do not have DHCP capability. The company's engagement specifically involves vending machines, which do not require or utilize DHCP for their operations. This indicates that Compass Group's vending machine infrastructure operates on a different network configuration method that is appropriate for standalone vending units.
+
+
+Batch 32:
+--------------------------------------------------------------------------------
+Compass Group's system does not require electronic transmission of data between hospital and non-hospital sites, except for remote support purposes. This indicates that the company's data transmission practices are limited in scope, potentially reducing the risk of data breaches or unauthorized access during inter-site transfers.
+
+
+Batch 33:
+--------------------------------------------------------------------------------
+Compass Group does not utilize any specific application connection methods such as HTTPS, RDP, or SSL VPN for this particular system or service. The lack of connection details suggests this may be an internally hosted application or one that does not require external network connectivity.
+
+
+Batch 34:
+--------------------------------------------------------------------------------
+Compass Group does not currently implement or require secure transfer protocols such as TLS 1.2, SFTP, or FTPS for data transfers within its network infrastructure. This aspect of network security is not applicable to Compass Group's current operations or technology stack, potentially indicating that the organization does not handle sensitive data transfers that would necessitate these secure protocols.
+
+
+Batch 35:
+--------------------------------------------------------------------------------
+Compass Group does not include any telecommunications services, such as leased lines, in their agreements. This indicates that the company does not provide or rely on dedicated telecommunication infrastructure as part of their service offerings or internal operations.
+
+
+Batch 36:
+--------------------------------------------------------------------------------
+Compass Group's vending machine systems do not include hardware or software that requires connection to a telephone line, either directly or via an external modem. This indicates that their vending machine operations are not dependent on telephone line connectivity for communication or data transfer purposes.
+
+
+Batch 37:
+--------------------------------------------------------------------------------
+Compass Group does not transmit hospital-specific data via telephone lines encrypted with a key of at least 128 bits. This security measure is not applicable to Compass Group's operations, suggesting that the company either does not handle hospital-specific data or does not use telephone lines for data transmission in its technology infrastructure and data management practices.
+
+
+Batch 38:
+--------------------------------------------------------------------------------
+Compass Group does not have a requirement or capability to limit provided telephone lines to out-dial only. This functionality is not applicable to their current telecommunications infrastructure or operational needs.
+
+
+Batch 39:
+--------------------------------------------------------------------------------
+Compass Group's systems do not require a connection or interface to the PBX, key system, or public carrier. This indicates that their network infrastructure operates independently of traditional telephony systems, potentially relying on more modern communication technologies or internal networks for their operational needs.
+
+
+Batch 40:
+--------------------------------------------------------------------------------
+Compass Group does not utilize analog lines in its network infrastructure. The company's network technologies and communication systems are primarily digital, reflecting modern industry standards for telecommunications and data transmission.
+
+
+Batch 41:
+--------------------------------------------------------------------------------
+Compass Group does not utilize digital lines in their network infrastructure. The question about digital lines is not applicable to their current network setup and technological practices.
+
+
+Batch 42:
+--------------------------------------------------------------------------------
+Compass Group does not utilize analog trunks in its network infrastructure. The company's telecommunications systems are not dependent on or configured to use analog trunk lines, indicating a more modern digital or IP-based telephony setup.
+
+
+Batch 43:
+--------------------------------------------------------------------------------
+Compass Group does not utilize digital trunks in its network infrastructure. This aspect of network technology is not applicable to the company's current telecommunications setup or data transmission systems.
+
+
+Batch 44:
+--------------------------------------------------------------------------------
+Compass Group does not utilize H.323 trunking in their network infrastructure. This technology is not applicable to their current voice and video communication systems or network architecture.
+
+
+Batch 45:
+--------------------------------------------------------------------------------
+Compass Group does not utilize SIP (Session Initiation Protocol) trunking in their network infrastructure. This technology, which allows for Voice over Internet Protocol (VoIP) communication, is not applicable to their current telecommunications setup or business operations.
+
+
+Batch 46:
+--------------------------------------------------------------------------------
+Compass Group's systems require Internet connectivity to obtain certain functionality, services, and related support included in their agreements. Specifically, this connectivity is necessary for vending payment processing. Compass Group utilizes a Point-to-Point Encrypted (P2PE) direct real-time connection to the card processor when items are checked out from vending machines, ensuring secure transaction processing over the Internet.
+
+
+Batch 47:
+--------------------------------------------------------------------------------
+Compass Group does not have a website associated with its vending machine operations. The company's vending machine services are provided without the use of a public-facing website, indicating a direct business-to-business or business-to-consumer model that does not rely on web-based interactions for this specific service line.
+
+
+Batch 48:
+--------------------------------------------------------------------------------
+Compass Group's vending machine operations do not involve a website for customer access. The typical internet connectivity requirements for accessing websites like CNN.com are not applicable to Compass Group's vending machine services, as these machines operate independently of web-based interfaces for customer interactions.
+
+
+Batch 49:
+--------------------------------------------------------------------------------
+Compass Group recommends the use of firewalls in their network setup for enhanced security. The organization has specific requirements for firewall implementation, which may include throughput limitations and specific port configurations that need to be allowed. These firewall specifications are crucial for maintaining the security and integrity of Compass Group's network infrastructure while ensuring optimal performance and connectivity for their operations across various sectors including technology, finance, and healthcare.
+
+
+Batch 50:
+--------------------------------------------------------------------------------
+Compass Group's implementation of vending machines does not require resources to be accessed from the public internet. This project is focused on installing physical vending equipment and does not involve external network connectivity or remote access requirements.
+
+
+Batch 51:
+--------------------------------------------------------------------------------
+Compass Group's vending machines do not require access to the public internet. This indicates that the company's vending machine operations are designed to function independently of internet connectivity, suggesting a closed system or local network architecture for these devices.
+
+
+Batch 52:
+--------------------------------------------------------------------------------
+Compass Group's vending machine operations do not require IP addresses. The company's vending machines are not network-connected devices that would necessitate IP addressing, indicating a simpler, standalone operational model for this aspect of their business.
+
+
+Batch 53:
+--------------------------------------------------------------------------------
+Compass Group's resources do not require access to resources in other subscriptions. This is not applicable to their operations as they primarily deal with vending machines, which operate independently and do not need cross-subscription access.
+
+
+Batch 54:
+--------------------------------------------------------------------------------
+Compass Group's vending machine operations do not involve internal users directly accessing resources. The company's vending machine infrastructure is designed to operate autonomously without requiring direct internal user access for routine operations or resource management.
+
+

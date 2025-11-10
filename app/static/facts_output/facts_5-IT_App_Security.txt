@@ -1,0 +1,126 @@
+Facts for Sheet: 5-IT_App_Security
+================================================================================
+
+Batch 1:
+--------------------------------------------------------------------------------
+Compass Group does not receive, process, or store sensitive information such as ePHI for its client. The organization's services do not involve handling any protected health information.
+
+Compass Group's status regarding a Business Associate Agreement with its client is uncertain and requires confirmation from the business or legal department.
+
+Compass Group provides vending machine services for snacks, beverages, and food to its client. This is the primary business process performed for the client organization.
+
+Compass Group does not handle any sensitive information such as ePHI in its operations for the client. The services provided do not involve any protected health information.
+
+Compass Group has workforce members who work onsite at the client's facility for specific purposes. These include the installation of vending machines and providing troubleshooting support when necessary.
+
+Compass Group's physical access to the client's locations is yet to be determined. This aspect will be clarified and finalized during contract negotiations with the client.
+
+The specific method and locations of access for Compass Group to the client's facilities are not yet established. These details, which may include badges, keys, or designated points of contact, will be determined and agreed upon during the contract negotiation process.
+
+
+Batch 2:
+--------------------------------------------------------------------------------
+Compass Group's workforce members have not been granted electronic access to any of Virtua's systems. This indicates a clear separation of access privileges between Compass Group and Virtua, maintaining system security and data protection.
+
+Compass Group operates and maintains a formally documented Compliance Program that includes Information Security and Privacy. This comprehensive program demonstrates the organization's commitment to regulatory compliance, data protection, and information security best practices across its operations.
+
+Compass Group reports metrics of its Compliance Program to executive leadership at least annually. This regular reporting ensures that top management is informed about the effectiveness of the compliance initiatives, allowing for strategic decision-making and continuous improvement in the organization's security and privacy posture.
+
+
+Batch 3:
+--------------------------------------------------------------------------------
+Compass Group has not implemented HIPAA policies and procedures for their vending machine operations, as HIPAA is not applicable to this specific engagement involving vending machines.
+
+Compass Group has a general policy for providing copies of current policies and training documents to clients upon request. The specifics of this policy are outlined in their General Policy Request statement, which governs how they handle such requests from clients like Virtua.
+
+
+Batch 4:
+--------------------------------------------------------------------------------
+Compass Group has implemented a Risk Management Program as part of its overall security and compliance strategy. This program is designed to identify, assess, and mitigate potential risks to the organization's operations, technologies, and data.
+
+The Risk Management Program at Compass Group includes documented procedures that clearly define who has the authority to accept identified risks. This ensures that risk acceptance decisions are made by appropriate personnel with the necessary knowledge and authority within the organization.
+
+Compass Group has not specified a particular methodology or framework for performing risk analysis as part of its Risk Management Program. The organization may use a custom approach or a combination of methods tailored to its specific needs and industry requirements.
+
+Compass Group has not provided a specific date for its last completed Risk Analysis. Regular risk assessments are typically part of a robust Risk Management Program, but the frequency and timing of these analyses may vary based on organizational needs and regulatory requirements.
+
+Compass Group has not specified whether its Risk Analysis was conducted internally or by a third party. The choice between internal and external risk assessment can depend on factors such as available expertise, objectivity requirements, and the complexity of the organization's risk landscape.
+
+
+Batch 5:
+--------------------------------------------------------------------------------
+Compass Group has a documented Privacy and Security Incident Response Plan in place, demonstrating their commitment to data protection and preparedness for potential security breaches.
+
+Compass Group has not experienced any major security incidents over the last two years, indicating a strong track record in maintaining the security and integrity of their systems and data.
+
+Compass Group periodically scans the Internet, Dark Web, and Social Media sites for potential breaches of customer data, showcasing proactive measures to detect and mitigate potential data leaks or unauthorized disclosures.
+
+Compass Group regularly reviews the risk of their subcontractors, including Business Associates, as part of their comprehensive risk management strategy to ensure the security of their supply chain and partner ecosystem.
+
+Compass Group does not handle or process Protected Health Information (PHI), therefore Business Associate Agreements related to ePHI are not applicable to their operations.
+
+
+Batch 6:
+--------------------------------------------------------------------------------
+Compass Group does not store, process, or access sensitive information on behalf of Virtua Health in relation to their vending machine operations. As a result, they do not have a Disaster Recovery Plan test date applicable to this scenario.
+
+Compass Group's application or device used in their operations does not communicate with any site or IP address outside the United States. All communications are contained within domestic networks.
+
+
+Batch 7:
+--------------------------------------------------------------------------------
+Compass Group implements comprehensive data encryption practices across its IT infrastructure. The organization encrypts all data at rest for workstations, mobile devices, and removable media. Additionally, Compass Group ensures that data is encrypted during transmission, providing end-to-end protection for sensitive information across its technology systems and applications.
+
+Compass Group has established and maintains a formal disposal and media reuse policy. This policy likely outlines procedures for securely disposing of or repurposing IT assets, ensuring that sensitive data is properly removed or destroyed before equipment is discarded or reused. The policy helps protect against data breaches and ensures compliance with data protection regulations across various sectors including technology, finance, and healthcare.
+
+
+Batch 8:
+--------------------------------------------------------------------------------
+Compass Group utilizes Point-to-Point Encryption (P2PE) for payment transactions, ensuring end-to-end transmission security. This encryption method provides a high level of protection for sensitive financial data during payment processing.
+
+Compass Group's systems do not involve any file transfers, eliminating potential vulnerabilities associated with file transport methods such as FTP, FTPS, SFTP, or modems. This absence of file transfers enhances the overall security posture of the application or system.
+
+Compass Group's vending machines do not utilize usernames or passwords for authentication, mitigating risks associated with credential transmission over networks. This design choice eliminates the possibility of clear-text credential interception during authentication processes.
+
+Compass Group's application or system does not communicate over specific TCP/UDP port numbers. This information suggests that the system may operate independently of network communications or utilize non-standard communication methods.
+
+
+Batch 9:
+--------------------------------------------------------------------------------
+Compass Group's vending machines provided as part of their services are not designed to be accessed by mobile devices such as iPads, laptops, or PDAs.
+
+The vending machines provided by Compass Group do not store any data locally, eliminating the need for specific security mechanisms like encryption on these devices.
+
+Compass Group's vending machine application does not require any specific file or directory antivirus exclusions.
+
+Compass Group's vending machines do not store user credentials or passwords locally, ensuring that no sensitive authentication data is present on the devices themselves.
+
+Encryption is not applicable for Compass Group's vending machines as they do not store data locally or require secure communication protocols for their basic operational functions.
+
+
+Batch 10:
+--------------------------------------------------------------------------------
+Compass Group's vending machines for Virtua Health are physically located within Virtua Health facilities. This arrangement means that the physical security measures for the equipment are provided by the client's location rather than Compass Group's own facilities.
+
+Compass Group does not maintain dedicated data centers or traditional IT infrastructure for its vending machine operations. The vending machines operate as standalone units within client locations, and therefore standard data center concepts like fault tolerance, high availability, and off-site storage are not applicable to this specific service offering.
+
+Compass Group does not utilize an SSAE16 SOC2 data center for its vending machine operations. The nature of the vending machine service does not require such facilities, as the machines operate independently at client locations.
+
+Compass Group's vending machine operations, including any production, testing, or disaster recovery processes, as well as support services, are conducted entirely within the United States. This ensures that all aspects of the vending machine service are managed domestically.
+
+
+Batch 12:
+--------------------------------------------------------------------------------
+Compass Group's cloud solution does not require any inbound or outbound interfaces, indicating a self-contained system that operates independently without the need for external data exchange or integration with other systems.
+
+Compass Group's operations do not involve Protected Health Information (PHI), so they do not use Fast Healthcare Interoperability Resources (FHIR) standards. This suggests that their services are not directly related to healthcare data management or exchange.
+
+Compass Group does not store any data outside the United States, whether cloud-based or otherwise. This practice ensures compliance with data localization requirements and reduces potential risks associated with cross-border data transfers.
+
+Compass Group does not store any Virtua data in their tenant. This indicates that they maintain a clear separation of data and do not handle or process information belonging to Virtua within their own systems or cloud environments.
+
+Compass Group's cloud-based storage does not involve any Protected Health Information (PHI) or Personally Identifiable Information (PII). Their services, specifically related to vending machine purchases, do not require the collection or storage of sensitive personal or health-related data.
+
+Compass Group does not co-mingle data with other cloud-based customers. This practice ensures data isolation and security, preventing potential data breaches or unauthorized access between different client accounts in their cloud environment.
+
+

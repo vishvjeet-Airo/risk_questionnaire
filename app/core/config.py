@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     # Qdrant configuration
     qdrant_host: str = "localhost"
     qdrant_port: int = 6333
-    qdrant_collection_name: str = "compass_group_knowledge_sample"
+    qdrant_collection_name: str = "compass_group_knowledge"
 
     aws_bearer_token_bedrock: Optional[str] = None
 
@@ -35,9 +35,9 @@ class Settings(BaseSettings):
     langfuse_public_key: Optional[str] = None
     langfuse_host: str = "https://cloud.langfuse.com"
     postgres_user: str = "postgres"
-    postgres_password: str = "1234"
+    postgres_password: str = "postgres"
     postgres_host: str = "localhost"
-    postgres_port: int = 5433
+    postgres_port: int = 5432
     postgres_db: str = "risk_db"
     
     @property
